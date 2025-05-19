@@ -1,7 +1,7 @@
 import React from "react"
-import CreatePage from "./pages/CreatePage.jsx"
-import HomePage from "./pages/HomePages.jsx"
-import AppLayout from "./components/layout/AppLayout.jsx"
+import CreatePage from "./pages/CreatePage"
+import HomePage from "./pages/HomePages"
+import AppLayout from "./components/layout/AppLayout"
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
 function App() {

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FiEdit2, FiTrash2 } from 'react-icons/fi';
 import { useProduct } from '../../context/ProductContext';
-import UpdateProductModal from '../updateProductModel.jsx';
+import UpdateProductModal from '../updateProductModel';
 
 const ProductCard = ({ product }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
