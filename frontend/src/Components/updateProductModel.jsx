@@ -34,7 +34,7 @@ function UpdateProductModal({ isOpen, onClose, product }) {
           <FiX size={24} />
         </button>
 
-        <h3 className="text-xl font-bold mb-4 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+        <h3 className="text-2xl font-bold mb-4 text-center bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
           Update Product
         </h3>
         

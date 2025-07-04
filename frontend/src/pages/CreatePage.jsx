@@ -3,10 +3,13 @@ import { useState } from "react";
 import { useProduct } from "../context/ProductContext";
 import { ToastContainer, toast } from "react-toastify";
 import { FiSave, FiImage, FiDollarSign, FiPackage } from "react-icons/fi";
+import { useNavigate } from "react-router-dom"; // 🆕 Import
+
 
 function CreatePage() {
   const { createProduct } = useProduct();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const navigate = useNavigate(); // 🆕 Initialize
 
   const [newProduct, setNewProduct] = useState({
     name: "",
@@ -34,6 +37,7 @@ function CreatePage() {
           price: "",
           image: "",
         });
+      navigate("/"); // 🆕 Redirect to home page
       }
     } finally {
       setIsSubmitting(false);
